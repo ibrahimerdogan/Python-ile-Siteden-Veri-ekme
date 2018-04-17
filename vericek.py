@@ -13,7 +13,6 @@ parser.add_argument("--url","-u", help="URL Adresi Yaziniz (http://example.com)"
 args = parser.parse_args()
 url = args.url
 
-#url    = raw_input("Taranacak bir websitesi giriniz : ")
 r  = requests.get(url)
 data = r.text
 soup = BeautifulSoup(data)
